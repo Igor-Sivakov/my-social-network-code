@@ -1,0 +1,19 @@
+.post__comments__toggler {
+  color: #6941c6;
+}
+
+.post__comments__splitter-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d0d5dd;
+  margin-bottom: 5px;
+}
+
+.post__comments__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__comments {
+  margin-left: 100px;
+}

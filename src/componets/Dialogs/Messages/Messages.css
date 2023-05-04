@@ -1,0 +1,18 @@
+.dialogs-message__item__conatiner {
+  display: flex;
+  margin: 0px 0px 20px 20px;
+}
+
+.dialogs-message__item__text__inner {
+  border-radius: 16px;
+  background-color: #ecf3ff;
+  max-width: 420px;
+  margin: 5px 0px 0px 5px;
+}
+
+.dialogs-message__item__text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #101828;
+  padding: 10px 10px 0px 10px;
+}

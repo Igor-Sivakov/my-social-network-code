@@ -1,0 +1,7 @@
+.chat-messages-screen__container {
+  height: 600px;
+  overflow-y: auto;
+  border-radius: 16px;
+  background-color: #f4ebff;
+  margin-bottom: 10px;
+}

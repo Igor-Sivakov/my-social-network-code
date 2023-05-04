@@ -1,0 +1,21 @@
+.fiends-frame__container {
+  margin-top: 65px;
+  display: inline-table;
+}
+
+.fiends-frame__h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 65px;
+  margin-bottom: 10px;
+}
+
+.fiends-frame__h2 span {
+  margin-left: -45px;
+  font-size: 30px;
+}
+
+.fiends-frame__inner {
+  text-align: center;
+}

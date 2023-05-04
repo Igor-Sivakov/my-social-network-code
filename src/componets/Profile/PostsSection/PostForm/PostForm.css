@@ -1,0 +1,37 @@
+.post-form__container {
+  display: flex;
+  max-width: 800px;
+  margin: 80px 30px 0px 35px;
+  font-family: 'Inter', sans-serif;
+}
+
+.post-form__inner {
+  width: 100%;
+}
+
+.post-form__h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.post-form__textarea {
+  color: #1d2939;
+  width: 100%;
+  min-height: 120px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ecf3ff;
+  padding: 10px 0px 0px 15px;
+}
+
+.post-form__btn {
+  position: sticky;
+  left: 100%;
+  width: 162px;
+  height: 36px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+}

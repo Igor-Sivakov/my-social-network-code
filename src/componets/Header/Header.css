@@ -1,0 +1,30 @@
+.header__auth__container {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__auth__user-profile-btn {
+  min-width: 140px;
+  height: 40px;
+  padding: 0px 20px;
+  display: flex;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: #9e77ed;
+  border: 1px solid #7f56d9;
+}
+
+.header__auth__login-btn {
+  width: 90px;
+  height: 40px;
+  margin: 0px 0px 0px 20px;
+  display: flex;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #9e77ed;
+  border: 1px solid #7f56d9;
+}

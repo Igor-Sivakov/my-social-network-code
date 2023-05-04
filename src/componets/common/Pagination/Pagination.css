@@ -1,0 +1,22 @@
+.pagination__container {
+  min-width: 200px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__page {
+  margin: 0px 5px 0px 5px;
+}
+
+.pagination__selected-page {
+  margin: -3px 5px 0px 5px;
+  padding: 0px 15px 0px 15px;
+  font-size: 16px;
+  text-align: right;
+  border-radius: 50px;
+  background-color: #9e77ed;
+  color: #ffffff;
+  transition-property: background-color color;
+  transition-duration: 0.3s;
+}

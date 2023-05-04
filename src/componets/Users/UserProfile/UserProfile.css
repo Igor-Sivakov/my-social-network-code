@@ -1,0 +1,51 @@
+.find-friends__profile__container {
+  display: flex;
+}
+
+.find-friends__profile__inner {
+  display: flex;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 5px;
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid #d0d5dd;
+  border-radius: 50px;
+  justify-content: space-between;
+}
+
+.find-friends__profile__img-name__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.find-friends__profile__img {
+  width: 65px;
+  height: 65px;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.find-friends__profile__name {
+  margin: 0px 0px 0px 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d2939;
+}
+
+.find-friends__profile__name:hover {
+  color: #53b1fd;
+}
+
+.find-friends__profile__status {
+  font-size: 13px;
+  margin: 10px 20px 0px 10px;
+}
+
+.find-friends__profile__add-btn {
+  width: 70px;
+  height: 70px;
+  font-size: 12px;
+  border-radius: 50px;
+  margin: 4px 4px 0px 0px;
+}

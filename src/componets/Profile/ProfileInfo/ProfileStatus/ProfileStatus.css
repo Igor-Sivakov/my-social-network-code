@@ -1,0 +1,9 @@
+.profile-card__status {
+  background-color: #f4ebff;
+  color: #1d2939;
+  border: none;
+  border-radius: 50px;
+  width: 400px;
+  height: 30px;
+  padding: 5px 10px;
+}

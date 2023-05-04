@@ -1,0 +1,32 @@
+.dialogs h2 {
+  margin: 0px 0px 5px 5px;
+}
+
+.dialogs__wrapper {
+  display: flex;
+  min-height: 100%;
+  min-width: 600px;
+  font-family: 'Inter', sans-serif;
+}
+
+.dialogs-list__conteiner {
+  width: 30%;
+}
+
+.dialogs-list__inner ul {
+  margin: 30px 0px 0px -30px;
+}
+
+.dialogs-messages__conteiner {
+  width: 70%;
+  min-height: 100%;
+  border-left: solid 1px #fcceed;
+}
+.dialogs-messages__chat-conteiner {
+  height: 600px;
+  overflow-y: auto;
+  max-width: 620px;
+  display: flex;
+  flex-flow: column;
+  margin-left: 30px;
+}

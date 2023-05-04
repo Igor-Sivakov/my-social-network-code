@@ -1,0 +1,22 @@
+.dialogs-invert-message__item__lean-to-the-left-board-box {
+  margin-left: auto;
+}
+
+.dialogs-invert-message__item__container {
+  display: flex;
+  margin: 0px 40px 20px 0px;
+}
+
+.dialogs-invert-message__item__text__inner {
+  border-radius: 16px;
+  background-color: #f4ebff;
+  max-width: 420px;
+  margin: 5px 5px 0px 0px;
+}
+
+.dialogs-invert-message__item__text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #101828;
+  padding: 10px 10px 0px 10px;
+}

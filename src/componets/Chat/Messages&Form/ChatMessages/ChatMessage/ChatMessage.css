@@ -1,0 +1,25 @@
+.chat-message__container {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  margin: 20px 40px;
+  color: #1d2939;
+}
+
+.chat-message__avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+
+.chat-message__message__inner {
+  border-radius: 18px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  background-color: #fef7c3;
+}
+.chat-message__user-name {
+  max-width: 500px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 8px;
+}

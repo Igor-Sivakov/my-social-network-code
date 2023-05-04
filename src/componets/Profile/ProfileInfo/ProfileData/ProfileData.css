@@ -1,0 +1,18 @@
+.profile-card__info__container {
+  margin-left: 30px;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-card__info__user-name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.profile-card__info__data {
+  font-size: 14px;
+  margin: 5px 0px 5px 0px;
+}
+._margin-top {
+  margin-top: 25px;
+}

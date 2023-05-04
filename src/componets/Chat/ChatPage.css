@@ -1,0 +1,9 @@
+.chat__container {
+  display: flex;
+  justify-content: center;
+}
+
+.chat__inner {
+  width: 100%;
+  margin: 25px 70px 10px 70px;
+}

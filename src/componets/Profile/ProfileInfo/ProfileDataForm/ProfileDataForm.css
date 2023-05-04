@@ -1,0 +1,35 @@
+.profile-info-form__container {
+  display: flex;
+  max-width: 680px;
+  margin-left: 25px;
+  font-family: 'Inter', sans-serif;
+  color: #1d2939;
+}
+
+.profile-info-form__top-segment__inner {
+  width: 100%;
+}
+
+.profile-info-form__top-segment__input {
+  width: 400px;
+  height: 40px;
+  margin: 10px 0px 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ecf3ff;
+}
+
+._wdth {
+  width: 100%;
+}
+
+.profile-info-form__top-segment__btn {
+  width: 162px;
+  height: 36px;
+  font-size: 14px;
+  border-radius: 8px;
+  position: sticky;
+  left: 100%;
+}

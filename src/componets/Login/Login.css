@@ -1,0 +1,101 @@
+.login-form__wrapper {
+  display: flex;
+  height: 700px;
+  min-width: 400px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0px 32px 48px;
+  gap: 32px;
+}
+
+.login-form__logo {
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: #7f56d9;
+}
+
+.login-form__h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.login-form__greeting {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+  margin-bottom: 40px;
+}
+
+.login-form__input-container {
+  text-align: left;
+  width: 360px;
+  height: 44px;
+  margin-bottom: 55px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.login-form__input {
+  width: 360px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.login-form__input-label {
+  color: #344054;
+  width: 66px;
+  height: 20px;
+  font-weight: 500;
+}
+
+.login-form__captcha__container {
+  width: 300px;
+}
+
+.login-form__checkbox__container {
+  display: flex;
+  width: 360px;
+  height: 30px;
+  margin: 55px 0px 0px 0px;
+}
+.login-form__checkbox__container span {
+  margin-right: 80px;
+}
+
+.login-form__checkbox {
+  box-sizing: border-box;
+  background: #ffffff;
+  width: 16px;
+  height: 16px;
+  color: #344054;
+  font-weight: 500;
+  border: 1px solid #d0d5dd;
+  border-radius: 4px;
+}
+
+.login-form__link {
+  font-weight: 600;
+  color: #6941c6;
+}
+
+.login-form__btn {
+  margin: 20px 0px 0px 0px;
+  width: 360px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.login-form__sign-up__link__container {
+  margin: 30px 0px 0px 0px;
+  color: #475467;
+}

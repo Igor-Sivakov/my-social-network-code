@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Silkscreen&display=swap');
+
+.sideBar__logo {
+  font-size: 25px;
+  display: flex;
+}
+.sideBar__logo img {
+  max-height: 75px;
+  margin-right: -10px;
+}
+.sideBar__logo div {
+  color: #61dafb;
+  font-family: 'Rubik Dirt', cursive;
+  margin-top: 20px;
+}
+
+.sideBar__logo_collapsed {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.sideBar__logo_collapsed img {
+  height: 50px;
+  margin-bottom: -5px;
+}
+.sideBar__logo_collapsed div {
+  color: #fb6161;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.side-bar__item__link {
+  font-size: 16px;
+  color: rgb(69, 69, 71);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3s;
+}

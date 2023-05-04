@@ -1,0 +1,21 @@
+.edit-post-form__wrapper {
+  display: flex;
+}
+.edit-post-form__textarea {
+  width: 100%;
+  color: #1d2939;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 50px;
+  background-color: #d0d5dd;
+  padding: 0px 15px;
+}
+.edit-post-form__btn {
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  border: 0.5 solid #7f56d9;
+  border-radius: 50px;
+  margin-left: 5px;
+}
