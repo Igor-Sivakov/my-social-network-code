@@ -1,0 +1,36 @@
+.post__settings__toggler {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: #6941c6;
+}
+
+.post__settings__menu {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px 0px 10px 15px;
+  opacity: 0;
+}
+
+.post__settings__menu__btn {
+  width: 70px;
+  border-radius: 50px;
+  background-color: #f9f5ff;
+  color: #6941c6;
+  border: none;
+  box-shadow: none;
+  margin: 3px 0px;
+  font-size: 12px;
+  display: flex;
+}
+
+.post__settings__menu__btn__dot {
+  background: #12b76a;
+  position: relative;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+}

@@ -1,0 +1,81 @@
+.profile-card__container {
+  display: flex;
+  height: 170px;
+  margin: 30px 30px 0px 30px;
+  color: #1d2939;
+}
+
+.profile-card__avatar {
+  padding-top: 7px;
+}
+
+.profile-card__avatar img {
+  width: 140px;
+  height: 140px;
+  background-size: cover;
+  border-radius: 75px;
+  cursor: pointer;
+}
+
+.profile-card__avatar__add-new-photo-btn {
+  display: inline-block;
+  position: relative;
+  width: 124px;
+  height: 36px;
+  font-size: 14px;
+  border-radius: 8px;
+  padding-top: 4px;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+  animation-name: show-in_addPhotoBtn, show-out_addPhotoBtn;
+  animation-duration: 0.6s, 0.6s;
+  animation-delay: 0s, 9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show-in_addPhotoBtn {
+  0% {
+    visibility: hidden;
+    left: 10px;
+    top: 35px;
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    left: 10px;
+    top: 15px;
+    opacity: 0.5;
+  }
+
+  100% {
+    visibility: visible;
+    left: 10px;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes show-out_addPhotoBtn {
+  0% {
+    visibility: visible;
+    left: 10px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    left: 10px;
+    top: 35px;
+    opacity: 0;
+  }
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.card__data {
+  width: 100%;
+}

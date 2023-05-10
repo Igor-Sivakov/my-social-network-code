@@ -1,26 +1,42 @@
 import React, { FC, useEffect, useState } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
+
 import { AnyAction } from 'redux'
+
+import {
+  useAppSelector,
+  useAppDispatch,
+} from './types/typedDispatch&Selector.types'
+
+import {
+  initializeApp,
+  showGlobalError,
+} from './redux/slices/app-slice/appAsyncActions'
+
+import {
+  getInitialized,
+  getGlobalError,
+} from './redux/slices/app-slice/appSelectors'
+
 import { Layout, theme } from 'antd'
+
+import { SideBar } from './components/SideBar/SideBar'
+import { Header } from './components/Header/Header'
+import Preloader from './components/common/preloader/preloader'
+import ProfilePage from './components/Profile/ProfilePage'
+import GlobalErrorMessage from './components/GlobalErrorMessage/GlobalErrorMessage'
+import Music from './components/Music/Music'
+import News from './components/News/News'
+import Settings from './components/Settings/Settings'
+
 import 'antd/dist/reset.css'
-import { initializeApp, showGlobalError } from './redux/reducers/appReducer'
-import { getInitialized, getGlobalError } from './redux/selectors/appSelectors'
-import { SideBar } from './componets/SideBar/SideBar'
-import { Header } from './componets/Header/Header'
-import Preloader from './componets/common/preloader/preloader'
-import ProfilePage from './componets/Profile/ProfilePage'
-import GlobalErrorMessage from './componets/GlobalErrorMessage/GlobalErrorMessage'
-import Music from './componets/Music/Music'
-import News from './componets/News/News'
-import Settings from './componets/Settings/Settings'
-import './componets/SideBar/SideBar.css'
+import './components/SideBar/SideBar.css'
 import './App.css'
 
-const Dialogs = React.lazy(() => import('./componets/Dialogs/Dialogs'))
-const ChatPage = React.lazy(() => import('./componets/Chat/ChatPage'))
-const UsersPage = React.lazy(() => import('./componets/Users/UsersPage'))
-const LoginPage = React.lazy(() => import('./componets/Login/LoginPage'))
+const Dialogs = React.lazy(() => import('./components/Dialogs/Dialogs'))
+const ChatPage = React.lazy(() => import('./components/Chat/ChatPage'))
+const UsersPage = React.lazy(() => import('./components/Users/UsersPage'))
+const LoginPage = React.lazy(() => import('./components/Login/LoginPage'))
 
 export const App: FC = () => {
   const { Content, Footer } = Layout
@@ -33,10 +49,10 @@ export const App: FC = () => {
     setCollapsed(collapsed)
   }
 
-  const globalError = useSelector(getGlobalError)
-  const initialized = useSelector(getInitialized)
+  const globalError = useAppSelector(getGlobalError)
+  const initialized = useAppSelector(getInitialized)
 
-  const dispatch = useDispatch()
+  const dispatch = useAppDispatch()
 
   useEffect(() => {
     const catchAllUnhandledErrors = (
@@ -56,17 +72,21 @@ export const App: FC = () => {
       window.removeEventListener('unhandledrejection', catchAllUnhandledErrors)
     }
   }, [dispatch])
+
   if (!initialized) return <Preloader />
+
   return (
     <HashRouter>
       <Layout className='app-wrapper'>
         <SideBar collapsed={collapsed} />
+
         <Layout className='site-layout'>
           <Header
             collapsed={collapsed}
             colorBgContainer={colorBgContainer}
             setCollapsed={setCollapse}
           />
+
           <Content
             style={{
               margin: '24px 16px',
@@ -76,6 +96,7 @@ export const App: FC = () => {
             }}
           >
             {globalError && <GlobalErrorMessage error={globalError} />}
+
             <React.Suspense
               fallback={
                 <div>
@@ -107,8 +128,9 @@ export const App: FC = () => {
               </Routes>
             </React.Suspense>
           </Content>
+
           <Footer style={{ textAlign: 'center' }}>
-            My network ©2023 Created by Sivakov Igor
+            My network ©2022 Created by Sivakov Igor
           </Footer>
         </Layout>
       </Layout>

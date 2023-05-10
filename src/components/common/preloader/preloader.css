@@ -1,0 +1,7 @@
+.preloader__container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+}

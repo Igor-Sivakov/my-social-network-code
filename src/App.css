@@ -44,14 +44,14 @@
 
 ._visible {
   animation-name: show-in_menu;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 ._hidden {
   animation-name: show-out_menu;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
